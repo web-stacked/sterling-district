@@ -1,0 +1,26 @@
+# Copy to wrangler.production.toml for local deploys (gitignored).
+# GitHub Actions generates this file from wrangler.toml + repository variables on push to main.
+
+name = "sterling-district"
+compatibility_date = "2026-06-25"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+[assets]
+binding = "ASSETS"
+directory = "./dist"
+not_found_handling = "404-page"
+
+[observability]
+enabled = true
+
+[vars]
+PUBLIC_CONTACT_FORM_ENDPOINT = "https://your-api.example.com/contact"
+R2_PUBLIC_DOMAIN = "your-public-r2-domain.r2.dev"
+
+[[kv_namespaces]]
+binding = "CMS_KV"
+id = "your-kv-namespace-id"
+
+[[r2_buckets]]
+binding = "CMS_R2"
+bucket_name = "your-r2-bucket-name"

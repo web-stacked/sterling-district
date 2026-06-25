@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "label": "Master Craftsmanship",
+    "headline": "Our",
+    "headline_accent": "Services",
+    "subtext": "Expert jewelry services with meticulous attention to detail, honoring the artistry of fine craftsmanship since 1947",
+    "bg_image": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1920&q=80"
+  },
+  "services": [
+    {
+      "id": "repair",
+      "title": "Jewelry Repair",
+      "subtitle": "Expert Restoration",
+      "description": "Our master craftsmen provide comprehensive repair services for all types of jewelry, restoring your precious pieces to their original splendor.",
+      "features": [
+        "Ring sizing and resetting",
+        "Chain repair and clasp replacement",
+        "Stone tightening and replacement",
+        "Prong repair and retipping",
+        "Bracelet and necklace repair"
+      ],
+      "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+      "cta": "Schedule Repair"
+    },
+    {
+      "id": "restoration",
+      "title": "Restoration Services",
+      "subtitle": "Preserve Your Legacy",
+      "description": "Bring your cherished heirlooms back to their original glory with our meticulous restoration services, honoring the craftsmanship of generations past.",
+      "features": [
+        "Antique jewelry restoration",
+        "Metal refinishing and replating",
+        "Vintage piece reconstruction",
+        "Heirloom jewelry preservation",
+        "Historical piece authentication"
+      ],
+      "image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+      "cta": "Discuss Restoration"
+    },
+    {
+      "id": "custom",
+      "title": "Custom Design",
+      "subtitle": "Your Vision, Our Craft",
+      "description": "Create your perfect piece with our bespoke design services. From concept to creation, we bring your unique vision to life.",
+      "features": [
+        "Custom engagement rings",
+        "Personalized jewelry design",
+        "Family heirloom redesign",
+        "Stone setting and mounting",
+        "3D modeling and prototyping"
+      ],
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+      "cta": "Start Custom Order"
+    },
+    {
+      "id": "diamond",
+      "title": "Diamond Services",
+      "subtitle": "Certified Excellence",
+      "description": "Expert diamond services backed by GIA-certified gemologists, ensuring authenticity and quality for your most precious investments.",
+      "features": [
+        "Diamond authentication",
+        "Quality assessment and grading",
+        "Diamond certification",
+        "Stone matching and replacement",
+        "Investment consultation"
+      ],
+      "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+      "cta": "Diamond Consultation"
+    }
+  ],
+  "process": {
+    "label": "How We Work",
+    "headline": "Our Process",
+    "subtext": "Every piece receives our undivided attention through a refined process",
+    "bg_image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1920&q=80",
+    "steps": [
+      { "step": "01", "title": "Consultation", "desc": "We discuss your needs and vision in detail" },
+      { "step": "02", "title": "Assessment", "desc": "Expert evaluation of your piece or requirements" },
+      { "step": "03", "title": "Craftsmanship", "desc": "Our master jewelers bring your vision to life" },
+      { "step": "04", "title": "Delivery", "desc": "Quality inspection and elegant presentation" }
+    ]
+  },
+  "cta": {
+    "label": "Ready to Begin?",
+    "headline": "Let's Discuss Your",
+    "headline_accent": "Project",
+    "subtext": "Contact us today to schedule a consultation with our expert jewelers",
+    "cta_primary": "Contact Us",
+    "cta_secondary": "Call (212) 555-1234"
+  }
+}

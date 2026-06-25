@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "badge": "Est. 1947 \u2022 New York",
+    "headline": "Where Luxury Meets",
+    "headline_accent": "Modern Brilliance",
+    "subtext": "Exquisite handcrafted jewelry featuring ethically sourced diamonds, crafted by master artisans since 1947",
+    "cta_primary": "Explore Collection",
+    "cta_secondary": "Book Consultation",
+    "bg_image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80"
+  },
+  "trust_badges": [
+    "Lifetime Guarantee",
+    "Complimentary Shipping",
+    "GIA Certified",
+    "Ethically Sourced"
+  ],
+  "featured": {
+    "label": "Featured Collection",
+    "headline": "Signature Pieces",
+    "subtext": "Each piece is meticulously crafted by our master jewelers, featuring the finest ethically sourced diamonds",
+    "cta": "View All Products"
+  },
+  "craftsmanship": {
+    "label": "Precision Craftsmanship",
+    "headline": "Engineered for",
+    "headline_accent": "Maximum Sparkle",
+    "description": "Every facet is precisely cut to optimize light performance. Our diamonds exhibit exceptional fire, brilliance, and scintillation\u2014a testament to modern innovation meeting timeless beauty.",
+    "cta": "Learn About Our Process",
+    "bg_image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1920&q=80",
+    "stats": [
+      { "value": "58", "label": "Facets" },
+      { "value": "VVS", "label": "Clarity" },
+      { "value": "D-F", "label": "Color Grade" },
+      { "value": "Ideal", "label": "Cut Grade" }
+    ]
+  },
+  "why_us": {
+    "label": "The Sterling District Difference",
+    "headline": "Why Choose Us?",
+    "subtext": "Where luxury meets modern innovation",
+    "features": [
+      { "icon": "sparkle", "title": "Exceptional Quality", "desc": "Meticulous attention to every detail with uncompromising standards" },
+      { "icon": "globe", "title": "Ethically Sourced", "desc": "Complete supply chain transparency with conflict-free diamonds" },
+      { "icon": "document", "title": "Certified Quality", "desc": "Every diamond GIA certified with detailed grading reports" },
+      { "icon": "gift", "title": "Luxury Experience", "desc": "White-glove service with elegant presentation" }
+    ]
+  },
+  "faq": {
+    "label": "Common Questions",
+    "headline": "Frequently Asked Questions"
+  },
+  "testimonials": {
+    "label": "Client Stories",
+    "headline": "What Our Clients Say",
+    "subtext": "Verified Reviews",
+    "style": "minimal"
+  },
+  "cta": {
+    "label": "Ready to Begin?",
+    "headline": "Let's Create Something",
+    "headline_accent": "Beautiful",
+    "subtext": "Schedule a consultation with our expert jewelers to begin your journey to a timeless piece",
+    "cta_primary": "Book Consultation",
+    "cta_secondary": "Browse Collection",
+    "bg_image": "https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?w=1920&q=80"
+  }
+}

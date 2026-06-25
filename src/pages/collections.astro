@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { getContentEntry, getContentCollection } from '../lib/content';
+import { linkify } from '../lib/linkify';
+import type { ProductData } from '../content-schema';
+
+const { entry: pageEntry, error: pageError } = await getContentEntry('pages', 'collections');
+if (pageError || !pageEntry) return Astro.rewrite('/500');
+const page = pageEntry.data as Record<string, any>;
+
+const { entries: productEntries } = await getContentCollection<ProductData>('products');
+const allProducts = productEntries.map(e => ({ data: e.data }));
+
+const categories = ['rings', 'necklaces', 'earrings', 'bracelets'] as const;
+
+const productsByCategory = categories.map(category => {
+	const categoryProducts = allProducts.filter(
+		(product) => product.data.category === category
+	);
+	return {
+		title: category.charAt(0).toUpperCase() + category.slice(1),
+		description: `Our collection of fine ${category}`,
+		items: categoryProducts
+	};
+});
+---
+
+<Layout title="Our Collections">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+		<div class="text-center mb-16">
+			<h1 class="text-4xl md:text-5xl font-heading mb-4 text-primary" data-caret="pages::collections::header.title">{page.header.title}</h1>
+			<p class="text-gray-600 text-lg max-w-2xl mx-auto" data-caret="pages::collections::header.description" set:html={linkify(page.header.description)} />
+		</div>
+
+		<div class="space-y-24">
+			{productsByCategory.map(category => (
+				<section>
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-heading mb-3 text-primary">{category.title}</h2>
+						<p class="text-gray-600 text-lg">{category.description}</p>
+					</div>
+
+					{category.items.length > 0 ? (
+						<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12">
+							{category.items.map((product) => (
+								<ProductCard
+									name={product.data.name}
+									price={product.data.price}
+									image={product.data.images[0]}
+									description={product.data.description}
+									slug={product.data.slug}
+								/>
+							))}
+						</div>
+					) : (
+						<div class="text-center py-12 bg-gray-50 rounded-xl">
+							<p class="text-gray-500" data-caret="pages::collections::empty_state.text">{page.empty_state.text}</p>
+						</div>
+					)}
+				</section>
+			))}
+		</div>
+	</div>
+</Layout>

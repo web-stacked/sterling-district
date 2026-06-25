@@ -1,0 +1,25 @@
+{
+  "name": "Vintage Pearl Necklace",
+  "price": 899,
+  "description": "This elegant vintage-inspired pearl necklace features a strand of lustrous pearls with an ornate pendant design, perfect for both classic and contemporary styles.",
+  "details": [
+    "Freshwater pearls",
+    "Vintage-inspired pendant",
+    "14k gold plated chain",
+    "Double-layer design"
+  ],
+  "specifications": {
+    "material": "14k Gold Plated, Pearls",
+    "stones": "Freshwater Pearls",
+    "weight": "18g",
+    "dimensions": "18\" chain with 2\" extender"
+  },
+  "images": [
+    "/images/products/pearl-necklace-1.jpg",
+    "/images/products/pearl-necklace-2.jpg",
+    "/images/products/pearl-necklace-3.jpg"
+  ],
+  "category": "necklaces",
+  "featured": true,
+  "slug": "vintage-pearl-necklace"
+}

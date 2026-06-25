@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="diamondGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9A961"/>
+      <stop offset="50%" style="stop-color:#D4B872"/>
+      <stop offset="100%" style="stop-color:#C9A961"/>
+    </linearGradient>
+  </defs>
+  <!-- Diamond shape -->
+  <path d="M64 8L16 52l48 68 48-68L64 8z" fill="url(#diamondGrad)"/>
+  <!-- Inner facets for depth -->
+  <path d="M64 8L16 52h96L64 8z" fill="#1A1A2E" opacity="0.15"/>
+  <path d="M64 120L16 52l48 20 48-20-48 68z" fill="#1A1A2E" opacity="0.1"/>
+  <!-- Center highlight -->
+  <path d="M64 28L36 52l28 40 28-40-28-24z" fill="#fff" opacity="0.3"/>
+  <path d="M64 28L44 52l20 28 20-28-20-24z" fill="#fff" opacity="0.15"/>
+</svg>

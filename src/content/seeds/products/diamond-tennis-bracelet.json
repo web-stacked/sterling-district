@@ -1,0 +1,25 @@
+{
+  "name": "Diamond Tennis Bracelet",
+  "price": 3999,
+  "description": "A timeless classic, this tennis bracelet features a continuous line of brilliant-cut diamonds set in 18k white gold. The secure double-safety clasp ensures worry-free wear, while the diamonds create an endless sparkle that catches the light with every movement.",
+  "details": [
+    "Round brilliant-cut diamonds",
+    "18k white gold setting",
+    "Double-safety clasp",
+    "Box-style setting"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "2.00ct total diamond weight, VS clarity, F-G color",
+    "weight": "15.5g",
+    "dimensions": "7 inches length"
+  },
+  "images": [
+    "/images/products/tennis-bracelet-1.jpg",
+    "/images/products/tennis-bracelet-2.jpg",
+    "/images/products/tennis-bracelet-3.jpg"
+  ],
+  "category": "bracelets",
+  "featured": true,
+  "slug": "diamond-tennis-bracelet"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Layered Crystal Pendant Necklace",
+  "price": 899,
+  "description": "Elegant double-layered necklace featuring a stunning blue crystal pendant on delicate gold chains, perfect for both everyday wear and special occasions.",
+  "details": [
+    "Double-layer design",
+    "Blue crystal pendant",
+    "14k gold chains",
+    "Adjustable length"
+  ],
+  "specifications": {
+    "material": "14k Gold",
+    "stones": "Blue Crystal",
+    "weight": "8.5g",
+    "dimensions": "16\" and 18\" layers"
+  },
+  "images": [
+    "/images/products/layered-pendant-1.jpg",
+    "/images/products/layered-pendant-2.jpg",
+    "/images/products/layered-pendant-3.jpg"
+  ],
+  "category": "necklaces",
+  "featured": true,
+  "slug": "layered-crystal-pendant-necklace"
+}

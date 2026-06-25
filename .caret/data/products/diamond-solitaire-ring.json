@@ -1,0 +1,25 @@
+{
+  "name": "Classic Diamond Solitaire Ring",
+  "price": 2999,
+  "description": "A timeless 1-carat diamond solitaire ring set in 18k white gold, perfect for engagements or special occasions.",
+  "details": [
+    "1-carat round brilliant diamond",
+    "18k white gold setting",
+    "Classic four-prong design",
+    "Includes certification"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "1ct Round Brilliant Diamond",
+    "weight": "3.2g",
+    "dimensions": "Size 6 (resizable)"
+  },
+  "images": [
+    "/images/products/diamond-solitaire-1.jpg",
+    "/images/products/diamond-solitaire-2.jpg",
+    "/images/products/diamond-solitaire-3.jpg"
+  ],
+  "category": "rings",
+  "featured": true,
+  "slug": "classic-diamond-solitaire-ring"
+}

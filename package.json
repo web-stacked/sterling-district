@@ -1,0 +1,45 @@
+{
+  "name": "sterling-district",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "CaretCMS starter theme — Astro 7 jewelry storefront on Cloudflare Workers with inline editing and Studio.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/web-stacked/sterling-district.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web-stacked/sterling-district/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "preview:cf": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:production": "scripts/deploy-production.sh",
+    "cf:types": "wrangler types",
+    "caretize": "caretize src --all --yes",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.0.0",
+    "@caretcms/cloudflare": "^0.1.1",
+    "@caretcms/core": "^0.1.2",
+    "@caretcms/zod": "^0.1.0",
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "^7.0.2",
+    "embla-carousel": "^8.6.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@caretcms/caretize": "^0.1.2",
+    "@tailwindcss/forms": "^0.5.11",
+    "@types/node": "^26.0.1",
+    "tailwindcss": "^4.3.1",
+    "wrangler": "^4.105.0"
+  }
+}

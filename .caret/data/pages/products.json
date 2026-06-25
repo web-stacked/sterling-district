@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "label": "Curated Selection",
+    "headline": "Our",
+    "headline_accent": "Collection",
+    "subtext": "Discover our curated selection of fine jewelry, each piece crafted with exceptional artistry",
+    "bg_image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80"
+  },
+  "empty_state": {
+    "headline": "No products found",
+    "subtext": "Try adjusting your filters or browse all products"
+  },
+  "cta": {
+    "label": "Something Special in Mind?",
+    "headline": "Let's Create Your",
+    "headline_accent": "Dream Piece",
+    "subtext": "Our master jewelers specialize in custom designs. Share your vision and we'll bring it to life.",
+    "cta_primary": "Contact Us",
+    "cta_secondary": "Custom Orders",
+    "bg_image": "https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?w=1920&q=80"
+  }
+}

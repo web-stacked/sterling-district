@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <div class="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-heading mb-4" data-caret="pages::404::headline">404</h1>
+    <p class="text-xl md:text-2xl mb-8" data-caret="pages::404::intro">Page Not Found</p>
+    <p class="text-gray-600 mb-8 max-w-md" data-caret="pages::404::body">
+      The page you're looking for doesn't exist or has been moved.
+    </p>
+    <a
+      href="/"
+      class="inline-block bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded transition-colors duration-300"
+      data-caret="pages::404::return_home"
+    >
+      Return Home
+    </a>
+  </div>
+</Layout>

@@ -1,0 +1,25 @@
+{
+  "name": "Classic Solitaire Ring",
+  "price": 3299,
+  "description": "A timeless classic featuring a stunning round brilliant diamond in a sleek six-prong platinum setting.",
+  "details": [
+    "1.2-carat round brilliant diamond",
+    "Platinum setting",
+    "Six-prong design",
+    "Includes certification"
+  ],
+  "specifications": {
+    "material": "Platinum",
+    "stones": "1.2ct Round Brilliant Diamond",
+    "weight": "4.1g",
+    "dimensions": "Size 6.5 (resizable)"
+  },
+  "images": [
+    "/images/products/diamond-solitaire-1.jpg",
+    "/images/products/diamond-solitaire-2.jpg",
+    "/images/products/diamond-solitaire-3.jpg"
+  ],
+  "category": "rings",
+  "featured": true,
+  "slug": "classic-solitaire-ring"
+}

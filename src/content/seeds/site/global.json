@@ -1,0 +1,44 @@
+{
+  "company_name": "Sterling District",
+  "tagline": "Your trusted partner for fine jewelry services, restoration, and custom designs since 1947.",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Products", "href": "/products" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "nav_cta": "Book Consultation",
+  "contact": {
+    "address_line1": "123 Jewelry Lane",
+    "address_line2": "Diamond City, NY 10001",
+    "phone": "(212) 555-1234",
+    "email": "info@sterlingdistrict.com",
+    "hours": {
+      "weekday": "Mon – Fri: 10am – 7pm",
+      "saturday": "Saturday: 10am – 5pm",
+      "sunday": "Sunday: Closed"
+    }
+  },
+  "social": {
+    "instagram": "#",
+    "tiktok": "#"
+  },
+  "newsletter": {
+    "heading": "Stay Updated",
+    "subtext": "Subscribe to receive updates on new products and exclusive offers.",
+    "placeholder": "Your email address",
+    "button": "Subscribe"
+  },
+  "footer_links": [
+    { "label": "Jewelry Repair", "href": "/services" },
+    { "label": "Custom Design", "href": "/services" },
+    { "label": "Diamond Services", "href": "/services" },
+    { "label": "Shop Collection", "href": "/products" },
+    { "label": "Book Consultation", "href": "/contact" }
+  ],
+  "footer_bottom_links": [
+    { "label": "Contact Us", "href": "/contact" },
+    { "label": "Our Services", "href": "/services" }
+  ],
+  "copyright_template": "© {year} Sterling District. All rights reserved."
+}

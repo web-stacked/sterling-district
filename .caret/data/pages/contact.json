@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "label": "Get In Touch",
+    "headline": "Contact Us",
+    "subtext": "Our expert team is here to assist with all your fine jewelry needs",
+    "bg_image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1920&q=80"
+  },
+  "response_banner": "We respond to all inquiries within 24 hours",
+  "form": {
+    "heading": "Send us a message",
+    "required_note": "Fields marked with * are required",
+    "name_label": "Your name",
+    "name_placeholder": "John Smith",
+    "email_label": "Email address",
+    "email_placeholder": "you@example.com",
+    "phone_label": "Phone number",
+    "phone_placeholder": "(212) 555-1234",
+    "service_label": "Service interest",
+    "service_options": ["Product Inquiry", "Jewelry Repair", "Restoration", "Custom Orders", "Diamond Services", "Other"],
+    "message_label": "Your message",
+    "message_placeholder": "Tell us how we can help you...",
+    "submit_button": "Send Message",
+    "privacy_notice": "Your information is secure and never shared"
+  },
+  "sidebar": {
+    "heading": "Visit us",
+    "subtitle": "Experience our exceptional service in person",
+    "location_label": "Location",
+    "hours_label": "Hours",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "call_cta_label": "Prefer to speak directly?",
+    "call_cta_text": "Call us now"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Diamond Tennis Bracelet",
+  "price": 3499,
+  "description": "Stunning tennis bracelet featuring 36 perfectly matched round brilliant diamonds set in 18k white gold with a secure double safety clasp.",
+  "details": [
+    "Total 3-carat weight",
+    "36 matched round brilliant diamonds",
+    "18k white gold setting",
+    "Double safety clasp"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "36x Round Brilliant Diamonds (3ct total)",
+    "weight": "12.8g",
+    "dimensions": "7 inches (adjustable)"
+  },
+  "images": [
+    "/images/products/tennis-bracelet-1.jpg",
+    "/images/products/tennis-bracelet-2.jpg",
+    "/images/products/tennis-bracelet-3.jpg"
+  ],
+  "category": "bracelets",
+  "featured": true,
+  "slug": "classic-diamond-tennis-bracelet"
+}

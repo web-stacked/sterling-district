@@ -1,0 +1,25 @@
+{
+  "name": "Akoya Pearl Strand Necklace",
+  "price": 1499,
+  "description": "Elegant strand of perfectly matched Akoya pearls, featuring a 14k white gold clasp. Each pearl is hand-selected for optimal luster and matching.",
+  "details": [
+    "7-7.5mm Akoya pearls",
+    "14k white gold clasp",
+    "18-inch length",
+    "Hand-knotted silk thread"
+  ],
+  "specifications": {
+    "material": "14k White Gold, Pearls",
+    "stones": "Akoya Pearls",
+    "weight": "28g",
+    "dimensions": "18 inches"
+  },
+  "images": [
+    "/images/products/pearl-necklace-1.jpg",
+    "/images/products/pearl-necklace-2.jpg",
+    "/images/products/pearl-necklace-3.jpg"
+  ],
+  "category": "necklaces",
+  "featured": true,
+  "slug": "akoya-pearl-strand-necklace"
+}

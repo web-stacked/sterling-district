@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Server Error - Sterling District">
+  <section class="min-h-[70vh] flex items-center justify-center bg-gray-50">
+    <div class="text-center px-4">
+      <h1 class="font-heading text-6xl text-primary mb-4" data-caret="pages::500::headline">500</h1>
+      <p class="font-body text-gray-600 text-lg mb-8" data-caret="pages::500::intro">Something went wrong on our end.</p>
+      <a
+        href="/"
+        class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-xs tracking-[0.2em] uppercase font-medium hover:bg-secondary transition-colors"
+        data-caret="pages::500::back_to_home"
+      >
+        Back to Home
+      </a>
+    </div>
+  </section>
+</Layout>

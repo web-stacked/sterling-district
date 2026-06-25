@@ -1,0 +1,25 @@
+{
+  "name": "Classic Solitaire Diamond Ring",
+  "price": 2499,
+  "description": "A timeless classic, this solitaire ring features a brilliant-cut diamond in a rose gold halo setting with intricate vintage-inspired detailing.",
+  "details": [
+    "Center diamond with halo setting",
+    "18k rose gold and white gold",
+    "Vintage-inspired filigree details",
+    "Includes certification"
+  ],
+  "specifications": {
+    "material": "18k Rose Gold & White Gold",
+    "stones": "Center Diamond with Halo Diamonds",
+    "weight": "3.8g",
+    "dimensions": "Size 6.5 (resizable)"
+  },
+  "images": [
+    "/images/products/vintage-halo-1.jpg",
+    "/images/products/vintage-halo-2.jpg",
+    "/images/products/vintage-halo-3.jpg"
+  ],
+  "category": "rings",
+  "featured": true,
+  "slug": "vintage-halo-diamond-ring"
+}

@@ -1,0 +1,249 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+/* ============================================
+   Design tokens — CSS variables as source of truth,
+   Tailwind @theme as the consumption layer.
+   ============================================ */
+
+@theme {
+  /* Colors */
+  --color-primary: #162447;
+  --color-secondary: #D4AF37;
+  --color-secondary-dark: #B4A14D;
+  --color-accent: #E5E4E2;
+
+  /* Error/danger states */
+  --color-error-bg: rgba(239, 68, 68, 0.06);
+  --color-error-border: rgba(239, 68, 68, 0.15);
+  --color-error-border-subtle: rgba(239, 68, 68, 0.2);
+  --color-error-badge: rgba(239, 68, 68, 0.1);
+
+  /* Overlays */
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-overlay-index: rgba(0, 0, 0, 0.6);
+  --color-overlay-index-text: rgba(255, 255, 255, 0.7);
+
+  /* Font families */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+
+  /* Animations */
+  --animate-slow-zoom: slowZoom 25s ease-in-out infinite;
+  --animate-pulse-slow: pulseSlow 8s ease-in-out infinite;
+}
+
+/* Studio tokens use @theme inline — resolves var() at usage site,
+   avoiding double-indirection through Tailwind's generated CSS variables. */
+@theme inline {
+  --color-studio-bg: var(--studio-bg);
+  --color-studio-surface: var(--studio-surface);
+  --color-studio-surface-hover: var(--studio-surface-hover);
+  --color-studio-border: var(--studio-border);
+  --color-studio-border-hover: var(--studio-border-hover);
+  --color-studio-gold: var(--studio-gold);
+  --color-studio-gold-dim: var(--studio-gold-dim);
+  --color-studio-gold-hover: var(--studio-gold-hover);
+  --color-studio-gold-border: rgba(212, 175, 55, 0.15);
+  --color-studio-text: var(--studio-text);
+  --color-studio-text-muted: var(--studio-text-muted);
+  --color-studio-text-dim: var(--studio-text-dim);
+  --color-studio-green: var(--studio-green);
+  --color-studio-red: var(--studio-red);
+  --color-studio-blue: var(--studio-blue);
+
+  --font-studio: var(--studio-font);
+  --font-studio-heading: var(--studio-font-heading);
+}
+
+@keyframes slowZoom {
+  0%, 100% { transform: scale(1.1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.3; }
+}
+
+/* ============================================
+   Hero animations — shared across index + luxury
+   ============================================ */
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSlowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+@keyframes scrollDot {
+  0%, 100% {
+    transform: translate(-50%, 0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-50%, -40px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@layer base {
+  :root {
+    --header-height: 72px;
+  }
+
+  html {
+    font-family: var(--font-body);
+    font-size: 17px;
+    @apply bg-white text-primary antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply font-semibold text-primary;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    @apply bg-secondary/20 text-primary;
+  }
+}
+
+@layer components {
+  /* ============================================
+     SECTION SPACING SYSTEM
+     ============================================ */
+
+  .section-spacing {
+    @apply py-12 md:py-14 lg:py-16;
+  }
+
+  .section-spacing-hero {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .section-spacing-cta {
+    @apply py-12 md:py-14 lg:py-16;
+  }
+
+  .section-spacing-bar {
+    @apply py-2.5 md:py-3;
+  }
+
+  .section-header-spacing {
+    @apply mb-8 md:mb-10 lg:mb-12;
+  }
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+
+  /* Section label badge — uppercase gold eyebrow text */
+  .label-badge {
+    @apply inline-block font-body text-secondary text-xs tracking-[0.3em] uppercase mb-4;
+  }
+
+  /* ============================================
+     HERO ANIMATIONS
+     ============================================ */
+
+  .hero-bg-zoom {
+    animation: heroSlowZoom 30s ease-in-out infinite alternate;
+  }
+
+  .hero-content > * {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: heroFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .hero-subtitle { animation-delay: 0.3s; }
+  .hero-title { animation-delay: 0.5s; }
+  .hero-title-accent { animation-delay: 0.7s; }
+  .hero-description { animation-delay: 0.9s; }
+  .hero-cta { animation-delay: 1.1s; }
+
+  .hero-scroll-dot {
+    animation: scrollDot 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .hero-scroll-indicator {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.5s forwards;
+  }
+
+  .hero-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  /* ============================================
+     PATTERNS & UTILITIES
+     ============================================ */
+
+  /* Focus-visible styles (WCAG 2.1 AA) */
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-secondary ring-offset-2;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply outline-none ring-2 ring-secondary/30 border-secondary;
+  }
+
+  /* Button loading state */
+  button[data-loading="true"] {
+    @apply pointer-events-none opacity-70;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-spin {
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+/* iOS zoom prevention */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+    min-height: 48px;
+  }
+}
+
+/* WCAG AA contrast fix */
+.text-white\/60 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Reduced motion (WCAG 2.1 AAA) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

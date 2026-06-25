@@ -1,0 +1,9 @@
+{
+  "header": {
+    "title": "Our Collections",
+    "description": "Discover our carefully curated jewelry collections"
+  },
+  "empty_state": {
+    "text": "No products available in this category yet."
+  }
+}

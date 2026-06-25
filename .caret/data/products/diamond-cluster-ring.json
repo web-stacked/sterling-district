@@ -1,0 +1,25 @@
+{
+  "name": "Diamond Cluster Ring",
+  "price": 1899,
+  "description": "Stunning cluster ring featuring a beautiful arrangement of round brilliant diamonds in a floral pattern, set in white gold for maximum sparkle.",
+  "details": [
+    "Multiple round brilliant diamonds",
+    "18k white gold setting",
+    "Floral cluster design",
+    "Total 0.75 carat weight"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "Round Brilliant Diamonds (0.75ct total)",
+    "weight": "4.2g",
+    "dimensions": "Size 7 (resizable)"
+  },
+  "images": [
+    "/images/products/cluster-ring-1.jpg",
+    "/images/products/cluster-ring-2.jpg",
+    "/images/products/cluster-ring-3.jpg"
+  ],
+  "category": "rings",
+  "featured": true,
+  "slug": "diamond-cluster-ring"
+}

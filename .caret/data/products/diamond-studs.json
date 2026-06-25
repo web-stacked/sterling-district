@@ -1,0 +1,25 @@
+{
+  "name": "Classic Diamond Stud Earrings",
+  "price": 1999,
+  "description": "Timeless diamond stud earrings featuring a pair of perfectly matched round brilliant diamonds set in 18k white gold with secure screw backs.",
+  "details": [
+    "Total 1-carat weight (0.5ct each)",
+    "18k white gold settings",
+    "Secure screw back closures",
+    "Includes certification"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "2x 0.5ct Round Brilliant Diamonds",
+    "weight": "2.4g",
+    "dimensions": "5.2mm diameter each"
+  },
+  "images": [
+    "/images/products/diamond-studs-1.jpg",
+    "/images/products/diamond-studs-2.jpg",
+    "/images/products/diamond-studs-3.jpg"
+  ],
+  "category": "earrings",
+  "featured": true,
+  "slug": "classic-diamond-stud-earrings"
+}

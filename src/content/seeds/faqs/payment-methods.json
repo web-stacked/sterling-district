@@ -1,0 +1,6 @@
+{
+  "id": "payment-methods",
+  "question": "What payment methods do you accept?",
+  "answer": "We accept all major credit cards, bank transfers, and offer financing options through our partnered services. For larger purchases, we can arrange custom payment plans.",
+  "order": 6
+}

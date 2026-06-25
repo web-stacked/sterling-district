@@ -1,0 +1,45 @@
+# build output
+dist/
+
+# generated types
+.astro/
+worker-configuration.d.ts
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# wrangler local state
+.wrangler/
+
+# caretcms public seed data is tracked for Cloudflare bundled fallback.
+# Keep local drafts, caretize backups, and runtime sidecars ignored.
+.caret/*
+!.caret/data/
+!.caret/data/**
+.caret/drafts/
+.caret/.caretize-bak/
+.caret/caretize-report.json
+.caretcms/
+
+# environment variables
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# local production deploy config (real Cloudflare binding IDs)
+wrangler.production.toml
+wrangler.toml.orig
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/

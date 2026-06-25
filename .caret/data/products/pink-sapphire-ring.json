@@ -1,0 +1,25 @@
+{
+  "name": "Pink Sapphire Halo Ring",
+  "price": 2899,
+  "description": "Stunning rose gold ring featuring a cushion-cut pink sapphire surrounded by a brilliant diamond halo, creating a perfect blend of color and sparkle.",
+  "details": [
+    "Cushion-cut pink sapphire center stone",
+    "Diamond halo setting",
+    "18k rose gold band",
+    "Vintage-inspired milgrain details"
+  ],
+  "specifications": {
+    "material": "18k Rose Gold",
+    "stones": "Pink Sapphire and Diamonds",
+    "weight": "4.2g",
+    "dimensions": "Size 6.5 (resizable)"
+  },
+  "images": [
+    "/images/products/vintage-halo-1.jpg",
+    "/images/products/vintage-halo-2.jpg",
+    "/images/products/vintage-halo-3.jpg"
+  ],
+  "category": "rings",
+  "featured": true,
+  "slug": "pink-sapphire-halo-ring"
+}

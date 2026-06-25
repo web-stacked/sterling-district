@@ -1,0 +1,19 @@
+{
+  "breadcrumb": {
+    "home": "Home",
+    "products": "Products"
+  },
+  "brand_label": "Sterling District",
+  "sections": {
+    "details": "Details",
+    "specifications": "Specifications"
+  },
+  "actions": {
+    "request_info": "Request Information"
+  },
+  "trust": {
+    "certified": "Certified",
+    "free_shipping": "Free Shipping",
+    "returns": "30-Day Returns"
+  }
+}

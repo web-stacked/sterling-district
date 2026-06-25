@@ -1,0 +1,25 @@
+{
+  "name": "Diamond Solitaire Pendant Necklace",
+  "price": 1299,
+  "description": "Elegant solitaire pendant necklace featuring a brilliant-cut diamond suspended on a delicate white gold chain, perfect for everyday luxury.",
+  "details": [
+    "0.50 carat round brilliant diamond",
+    "18k white gold chain and setting",
+    "Classic four-prong setting",
+    "Adjustable chain length"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "Round Brilliant Diamond (0.50ct)",
+    "weight": "3.5g",
+    "dimensions": "18\" chain (adjustable to 16\")"
+  },
+  "images": [
+    "/images/products/pendant-necklace-1.jpg",
+    "/images/products/pendant-necklace-2.jpg",
+    "/images/products/pendant-necklace-3.jpg"
+  ],
+  "category": "necklaces",
+  "featured": true,
+  "slug": "diamond-pendant-necklace"
+}

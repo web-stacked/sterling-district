@@ -1,0 +1,25 @@
+{
+  "name": "Diamond Drop Earrings",
+  "price": 2499,
+  "description": "Elegant drop earrings featuring brilliant-cut diamonds in a graceful cascade design, set in 18k white gold.",
+  "details": [
+    "Total 1.5-carat weight diamonds",
+    "18k white gold settings",
+    "Secure lever back closures",
+    "Includes certification"
+  ],
+  "specifications": {
+    "material": "18k White Gold",
+    "stones": "Brilliant-cut Diamonds (1.5ct total)",
+    "weight": "3.8g",
+    "dimensions": "1.5 inches in length"
+  },
+  "images": [
+    "/images/products/diamond-studs-1.jpg",
+    "/images/products/diamond-studs-2.jpg",
+    "/images/products/diamond-studs-3.jpg"
+  ],
+  "category": "earrings",
+  "featured": true,
+  "slug": "diamond-drop-earrings"
+}
