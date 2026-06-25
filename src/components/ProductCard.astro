@@ -3,6 +3,7 @@ import { img } from '../lib/image';
 import { linkify } from '../lib/linkify';
 
 interface Props {
+  id?: string;
   name: string;
   price: number;
   image: string;
@@ -11,7 +12,8 @@ interface Props {
   featured?: boolean;
 }
 
-const { name, price, image, description, slug, featured = false } = Astro.props;
+const { id, name, price, image, description, slug, featured = false } = Astro.props;
+const caretPrefix = id ? `products::${id}` : undefined;
 ---
 
 <a href={`/products/${slug}`} class="group block h-full">
@@ -23,7 +25,7 @@ const { name, price, image, description, slug, featured = false } = Astro.props;
         alt={name}
         class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
         loading="lazy"
-        data-caret="components::product-card::hero"
+        data-caret={caretPrefix ? `${caretPrefix}::images.0` : undefined}
       />
       <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -43,14 +45,28 @@ const { name, price, image, description, slug, featured = false } = Astro.props;
 
     <!-- Content -->
     <div class="p-6 bg-white flex-grow flex flex-col">
-      <h3 class="font-heading text-lg text-primary mb-2 group-hover:text-secondary transition-colors duration-300 line-clamp-2">{name}</h3>
+      <h3
+        class="font-heading text-lg text-primary mb-2 group-hover:text-secondary transition-colors duration-300 line-clamp-2"
+        data-caret={caretPrefix ? `${caretPrefix}::name` : undefined}
+      >
+        {name}
+      </h3>
 
       {description && (
-        <p class="font-body text-gray-500 text-sm line-clamp-2 mb-4 flex-grow" set:html={linkify(description)} />
+        <p
+          class="font-body text-gray-500 text-sm line-clamp-2 mb-4 flex-grow"
+          data-caret={caretPrefix ? `${caretPrefix}::description` : undefined}
+          set:html={linkify(description)}
+        />
       )}
 
       <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-        <span class="font-body text-secondary text-lg font-semibold">${price.toLocaleString()}</span>
+        <span
+          class="font-body text-secondary text-lg font-semibold"
+          data-caret={caretPrefix ? `${caretPrefix}::price` : undefined}
+        >
+          ${price.toLocaleString()}
+        </span>
         <span class="inline-flex items-center text-primary/50 text-xs group-hover:text-secondary transition-colors">
           <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>

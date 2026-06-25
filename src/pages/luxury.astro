@@ -71,7 +71,7 @@ const testimonials = testimonialEntries.sort((a, b) => (a.data.order ?? 0) - (b.
 						</div>
 						<h3 class="font-heading text-xl text-primary mb-2 group-hover:text-secondary transition-colors" data-caret={`products::${p.id}::name`}>{p.data.name}</h3>
 						<div class="flex items-center gap-3">
-							<span class="font-body text-secondary font-medium">{'$' + p.data.price.toLocaleString()}</span>
+							<span class="font-body text-secondary font-medium" data-caret={`products::${p.id}::price`}>{'$' + p.data.price.toLocaleString()}</span>
 						</div>
 						<span class="inline-flex items-center text-primary/70 text-sm mt-3 group-hover:text-secondary transition-colors">
 							View Details

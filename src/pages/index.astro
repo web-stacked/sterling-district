@@ -59,6 +59,7 @@ const testimonials = testimonialEntries.sort((a, b) => (a.data.order ?? 0) - (b.
 									src={img.card(product.data.images[0])}
 									alt={product.data.name}
 									class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+									data-caret={`products::${product.id}::images.0`}
 								/>
 								<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 								<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] tracking-[0.2em] uppercase px-4 py-2 shadow-lg">
@@ -72,9 +73,9 @@ const testimonials = testimonialEntries.sort((a, b) => (a.data.order ?? 0) - (b.
 								</div>
 							</div>
 							<div class="p-6 bg-white flex-grow flex flex-col justify-between">
-								<h3 class="font-heading text-xl text-primary mb-3 group-hover:text-secondary transition-colors duration-300 line-clamp-2">{product.data.name}</h3>
+								<h3 class="font-heading text-xl text-primary mb-3 group-hover:text-secondary transition-colors duration-300 line-clamp-2" data-caret={`products::${product.id}::name`}>{product.data.name}</h3>
 								<div class="flex items-center justify-between">
-									<span class="font-body text-secondary text-lg font-semibold">{'$' + product.data.price.toLocaleString()}</span>
+									<span class="font-body text-secondary text-lg font-semibold" data-caret={`products::${product.id}::price`}>{'$' + product.data.price.toLocaleString()}</span>
 									<span class="inline-flex items-center text-primary/50 text-xs group-hover:text-secondary transition-colors">
 										<svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -216,4 +217,3 @@ const testimonials = testimonialEntries.sort((a, b) => (a.data.order ?? 0) - (b.
 		</div>
 	</section>
 </Layout>
-

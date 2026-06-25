@@ -1,3 +1,5 @@
+import { loadCollection, loadEntry } from '@caretcms/core/runtime';
+
 // Eager-import every seed file at build time so pages can render from local JSON.
 const seedModules = import.meta.glob<Record<string, unknown>>(
   '../content/seeds/**/*.json',
@@ -31,11 +33,40 @@ function getSeedIds(collection: string): string[] {
     .map((key) => key.slice(prefix.length, -5));
 }
 
+async function getRuntimeEntry<T>(
+  collection: string,
+  id: string,
+): Promise<ContentEntry<T> | null> {
+  try {
+    const data = await loadEntry(collection, id);
+    return data ? { id, data: data as T } : null;
+  } catch {
+    return null;
+  }
+}
+
+async function getRuntimeCollection<T>(
+  collection: string,
+): Promise<ContentEntry<T>[] | null> {
+  try {
+    const entries = await loadCollection(collection);
+    return entries.map((entry) => ({
+      id: entry.id,
+      data: entry.data as T,
+    }));
+  } catch {
+    return null;
+  }
+}
+
 export async function getContentEntry<T = Record<string, unknown>>(
   collection: string,
   id: string,
 ): Promise<ContentEntryResult<T>> {
   try {
+    const runtimeEntry = await getRuntimeEntry<T>(collection, id);
+    if (runtimeEntry) return { entry: runtimeEntry, error: undefined };
+
     const seed = getSeed(collection, id) as T | null;
     if (seed) return { entry: { id, data: seed }, error: undefined };
 
@@ -55,12 +86,20 @@ export async function getContentCollection<T = Record<string, unknown>>(
   collection: string,
 ): Promise<ContentCollectionResult<T>> {
   try {
-    const results = await Promise.all(
-      getSeedIds(collection).map((id) => getContentEntry<T>(collection, id)),
-    );
+    const entriesById = new Map<string, ContentEntry<T>>();
+
+    for (const id of getSeedIds(collection)) {
+      const seed = getSeed(collection, id) as T | null;
+      if (seed) entriesById.set(id, { id, data: seed });
+    }
+
+    const runtimeEntries = await getRuntimeCollection<T>(collection);
+    for (const entry of runtimeEntries ?? []) {
+      entriesById.set(entry.id, entry);
+    }
 
     return {
-      entries: results.flatMap((result) => result.entry ? [result.entry] : []),
+      entries: Array.from(entriesById.values()),
       error: undefined,
     };
   } catch (e) {

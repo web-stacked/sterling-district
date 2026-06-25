@@ -10,7 +10,7 @@ if (pageError || !pageEntry) return Astro.rewrite('/500');
 const page = pageEntry.data as Record<string, any>;
 
 const { entries: productEntries } = await getContentCollection<ProductData>('products');
-const products = productEntries.map(e => ({ data: e.data }));
+const products = productEntries.map(e => ({ id: e.id, data: e.data }));
 
 const categories = ['all', 'rings', 'necklaces', 'earrings', 'bracelets'] as const;
 
@@ -122,6 +122,7 @@ if (sortParam === 'price-low') {
 				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
 					{filteredProducts.map((product) => (
 						<ProductCard
+							id={product.id}
 							name={product.data.name}
 							price={product.data.price}
 							image={product.data.images[0]}
