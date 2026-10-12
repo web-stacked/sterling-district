@@ -54,7 +54,7 @@ const caretPrefix = id ? `products::${id}` : undefined;
 
       {description && (
         <p
-          class="font-body text-gray-500 text-sm line-clamp-2 mb-4 flex-grow"
+          class="font-body text-gray-500 text-sm line-clamp-2 mb-4"
           data-caret={caretPrefix ? `${caretPrefix}::description` : undefined}
           set:html={linkify(description)}
         />
