@@ -16,11 +16,22 @@
     "phone_label": "Phone number",
     "phone_placeholder": "(212) 555-1234",
     "service_label": "Service interest",
-    "service_options": ["Product Inquiry", "Jewelry Repair", "Restoration", "Custom Orders", "Diamond Services", "Other"],
+    "service_options": [
+      "Product Inquiry",
+      "Jewelry Repair",
+      "Restoration",
+      "Custom Orders",
+      "Diamond Services",
+      "Other"
+    ],
     "message_label": "Your message",
     "message_placeholder": "Tell us how we can help you...",
     "submit_button": "Send Message",
-    "privacy_notice": "Your information is secure and never shared"
+    "privacy_notice": "Your information is secure and never shared",
+    "success_title": "Message sent successfully",
+    "success_body": "Thank you for reaching out. We'll get back to you within 24 hours.",
+    "error_title": "Unable to send message",
+    "error_body": "Please check your input and try again, or call us directly."
   },
   "sidebar": {
     "heading": "Visit us",

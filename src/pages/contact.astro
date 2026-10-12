@@ -194,8 +194,8 @@ const site = siteEntry?.data;
 												<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
 											</svg>
 											<div>
-												<p class="font-medium text-sm text-green-800" data-caret="pages::contact::intro">Message sent successfully</p>
-												<p class="text-sm text-green-700 mt-1" data-caret="pages::contact::body">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+												<p class="font-medium text-sm text-green-800" data-caret="pages::contact::form.success_title">{page.form.success_title ?? 'Message sent successfully'}</p>
+												<p class="text-sm text-green-700 mt-1" data-caret="pages::contact::form.success_body">{page.form.success_body ?? "Thank you for reaching out. We'll get back to you within 24 hours."}</p>
 											</div>
 										</div>
 									</div>
@@ -207,8 +207,8 @@ const site = siteEntry?.data;
 												<path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
 											</svg>
 											<div>
-												<p class="font-medium text-sm text-red-800" data-caret="pages::contact::body_2">Unable to send message</p>
-												<p id="errorMessageText" class="text-sm text-red-700 mt-1" data-caret="pages::contact::body_3">Please check your input and try again, or call us directly.</p>
+												<p class="font-medium text-sm text-red-800" data-caret="pages::contact::form.error_title">{page.form.error_title ?? 'Unable to send message'}</p>
+												<p id="errorMessageText" class="text-sm text-red-700 mt-1" data-caret="pages::contact::form.error_body">{page.form.error_body ?? 'Please check your input and try again, or call us directly.'}</p>
 											</div>
 										</div>
 									</div>
