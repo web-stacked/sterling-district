@@ -69,7 +69,7 @@ Pushes to `main` → [`.github/workflows/deploy.yml`](.github/workflows/deploy.y
 
 ## Content
 
-Seeds in `src/content/seeds`. Schemas in `src/content-schema.ts`. Mirror in `.caret/data` for bundled Worker fallback before KV has data.
+Seed content lives in `.caret/data` (the Worker serves it until KV has the entry). Schemas are in `src/content-schema.ts`.
 
 After template changes: `npm run caretize`
 
