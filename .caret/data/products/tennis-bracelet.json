@@ -1,5 +1,5 @@
 {
-  "name": "Diamond Tennis Bracelet",
+  "name": "Classic Diamond Tennis Bracelet",
   "price": 3499,
   "description": "Stunning tennis bracelet featuring 36 perfectly matched round brilliant diamonds set in 18k white gold with a secure double safety clasp.",
   "details": [
@@ -20,6 +20,6 @@
     "/images/products/tennis-bracelet-3.jpg"
   ],
   "category": "bracelets",
-  "featured": true,
+  "featured": false,
   "slug": "classic-diamond-tennis-bracelet"
 }
